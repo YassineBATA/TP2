@@ -9,21 +9,21 @@
     <header>
         <h1>Inscription au Club Informatique</h1>
     </header>
-    <form action="merc.html" method="get">
+    <form action="merci.html" method="get">
         <main>
             <h2>Vos informations</h2>
             <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom"><br><br>
+            <input type="text" id="nom" name="nom" required minlength="2"><br><br>
             <label for="prenom">Prénom</label>
-            <input type="text" id="prenom" name="nom"><br><br>
+            <input type="text" id="prenom" name="nom" required minlength="2"><br><br>
             <label for="email">Adresse e-mail</label>
-            <input type="email" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email" required><br><br>
             <label for="telephone">Téléphone</label>
-            <input type="tel" id="telephone" name="telephone"><br><br>
+            <input type="tel" id="telephone" name="telephone" required pattern="[0-9]{8}" title="8 chiffres sans espaces"><br><br>
             <label for="mdp">Mot de passe</label>
-            <input type="password" id="mdp" name="mdp"><br><br>
+            <input type="password" id="mdp" name="mdp" required minlength="8"><br><br>
             <label for="naissance">Date de naissance</label>
-            <input type="date" id="naissance" name="naissance"><br><br>
+            <input type="date" id="naissance" name="naissance" required min="1990-01-01" max="2010-12-31"><br><br>
             <section>
                 <fieldset>
                     <legend>Niveau en informatique</legend>
@@ -45,7 +45,7 @@
                 </fieldset>
             </section>
             <label>Année d'études</label>
-            <select name="annee">
+            <select name="annee" required>
                 <option value="" selected>Choisir</option>
                 <option value="">1ere</option>
                 <option value="">2eme</option>
@@ -53,7 +53,7 @@
             </select><br><br>
             <label>Motivation</label>
             <textarea rows="4" cols="40" name="motivation"></textarea><br><br>
-            <input type="checkbox" name="reglement">
+            <input type="checkbox" name="reglement" required>
             <label for="reglement">J'accepte le règlement du club</label><br><br>
             <button type="submit" value="Envoyer">Envoyer</button>
             <button type="reset" value="Reinitialiser">Réinitialiser</button>
