@@ -24,6 +24,39 @@
             <input type="password" id="mdp" name="mdp"><br><br>
             <label for="naissance">Date de naissance</label>
             <input type="date" id="naissance" name="naissance"><br><br>
+            <section>
+                <fieldset>
+                    <legend>Niveau en informatique</legend>
+                    <input type="radio" id="niveau" name="niveau" value="debutant">
+                    <label for="niveau">Débutant</label><br><br>
+                    <input type="radio" id="Intermediare" name="niveau" value="Intermediare">
+                    <label for="Intermediare">Intermediare</label><br><br>
+                    <input type="radio" id="Avance" name="niveau" value="Avance">
+                    <label for="Avance">Débutant</label><br><br>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Ateliers souhaités</legend>
+                    <input type="checkbox" id="python" name="atelier" value="python">
+                    <label for="python">Atelier Python</label><br><br>
+                    <input type="checkbox" id="jeux" name="atelier" value="jeux-video">
+                    <label for="jeux">Atelier jeux video</label><br><br>
+                </fieldset>
+            </section>
+            <label>Année d'études</label>
+            <select name="annee">
+                <option value="" selected>Choisir</option>
+                <option value="">1ere</option>
+                <option value="">2eme</option>
+                <option value="">3eme</option>
+            </select><br><br>
+            <label>Motivation</label>
+            <textarea rows="4" cols="40" name="motivation"></textarea><br><br>
+            <input type="checkbox" name="reglement">
+            <label for="reglement">J'accepte le règlement du club</label><br><br>
+            <button type="submit" value="Envoyer">Envoyer</button>
+            <button type="reset" value="Reinitialiser">Réinitialiser</button>
         </main>
     </form>
     <footer>
